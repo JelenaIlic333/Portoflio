@@ -46,11 +46,11 @@ const About = ({isDarkMode}) => {
           transition={{duration: 0.6, delay: 0.8}}
          className='flex-1'>
             <p className='mb-10 max-w-2x1 font-Ovo'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia exercitationem atque,
-                 enim, velit est saepe adipisci vero ipsa quisquam fuga aliquam tempore incidunt. 
-                 Debitis officiis quaerat nesciunt in, sed quisquam? Eum, atque beatae consequuntur
-                  consectetur recusandae quis nulla nam cum,
-                 aliquid sunt, minus harum tempore laborum optio inventore doloribus impedit!
+            I am a creative and curious individual passionate about personal growth, technology, and self-expression. 
+            With a background in drawing, painting, cooking, and mindfulness practices like yoga and meditation, 
+            I bring a balanced and holistic perspective to everything I do. Currently focused on programming,
+            I’m developing my skills in problem-solving and logical thinking, excited by the endless possibilities tech offers.
+            I thrive in dynamic, collaborative environments that value creativity, continuous learning, and meaningful impact.
             </p>
 
             <motion.ul
@@ -79,21 +79,23 @@ const About = ({isDarkMode}) => {
              className='my-6 text-gray-700 font-Ovo dark:text-white/80'>Tools I use
              </motion.h4>
 
-            <motion.ul
-              initial={{opacity: 0}}
-              whileInView={{opacity: 1}}
-              transition={{delay: 1.5, duration: 0.6}}
-             className='flex items-center gap-3 sm:gap-5'>
-                {toolsData.map((tool, index)=>(
-                    <motion.li
-                    whileHover={{ scale: 1.1 }}
-                     className='flex items-center justify-center w-12 sm:w-14 aspect-square border 
-                    border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500' 
-                    key={index}>
-                        <Image src={tool} alt='Tool' className='w-5 sm:w-7' />
-                    </motion.li>
-                ))}
-            </motion.ul>
+       <motion.ul
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+  transition={{ delay: 1.5, duration: 0.6 }}
+  className="grid grid-cols-4 gap-3 sm:grid-cols-6 sm:gap-5"
+>
+  {toolsData.map((tool, index) => (
+    <motion.li
+      whileHover={{ scale: 1.1 }}
+      className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500"
+      key={index}
+    >
+      <Image src={tool} alt="Tool" className="w-5 sm:w-7" />
+    </motion.li>
+  ))}
+</motion.ul>
+
         </motion.div>
       </motion.div>
     </motion.div>

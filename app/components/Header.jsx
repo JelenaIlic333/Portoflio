@@ -29,16 +29,15 @@ const Header = () => {
              whileInView={{y: 0, opacity: 1}}
              transition={{duration: 0.8, delay: 0.5}}
              className='text-3x1 sm:text-6x1 lg:text-[66px] font-Ovo'>
-                frontend web developer
+                Junior full-stack developer
             </motion.h1>
 
             <motion.p
              initial={{opacity:0}}
             whileInView={{opacity: 1}}
             transition={{duration: 0.6, delay: 0.7}}
-             className='max-w-2x1 mx-auto font-Ovo'>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                 Quia, eaque laborum laboriosam iure qui accusamus iste earum et dolores commodi!
+             className='max-w-2x1 mx-auto font-Ovo'><br></br>
+            Take a Sneak Peek! My Journey to Full Stack Is Still Unfolding — Come See the Code Magic in Progress!
             </motion.p>
 
             <div className='flex glex-col sm:flex-row items-center gap-4 mt-4'>
