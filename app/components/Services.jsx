@@ -51,9 +51,34 @@ const Services = () => {
                 <p className='text-sm text-gray-600 leading-5 dark:text-white/80'>
                   {description}
                 </p>
-                <a href={link} className='flex items-center gap-2 text-sm mt-5'>
-                  Read more <Image src={assets.right_arrow} alt="" className='w-4'/>
-                </a>
+                <a
+  href={link}
+  target="_blank"
+  rel="noopener noreferrer"
+  className={`
+    inline-flex items-center justify-between gap-3 mt-5 
+    border border-black dark:border-white 
+    rounded-full px-5 py-2 transition duration-300 
+    hover:scale-105 hover:shadow-md 
+    dark:bg-transparent bg-white 
+    dark:hover:bg-white/10 hover:bg-[#f4e1fc]
+    text-sm font-medium
+  `}
+>
+  <span className="text-black dark:text-white">Visit GitHub</span>
+
+  <div
+    className={`
+      p-2 rounded-full 
+      bg-black dark:bg-white 
+      transition-transform duration-300 
+      group-hover:scale-110
+    `}
+  >
+    <Image src={assets.github} alt="GitHub" className="w-4 invert dark:invert-0" />
+  </div>
+</a>
+
             </motion.div>
           ))}
       </motion.div>
