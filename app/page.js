@@ -7,7 +7,7 @@ import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Services from "./components/Services";
 import Work from "./components/Work";
-import SiteProject from "./components/SiteProject";
+import SiteProject from "./components/SiteProject.jsx";
 
 
 export default function Home() {

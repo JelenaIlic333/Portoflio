@@ -56,9 +56,7 @@ const Contact = () => {
         whileInView={{ opacity: 1}}
         transition={{delay: 0.7, duration: 0.5 }}
         className='text-center max-w-2x1 mx-auto mt-5 mb-12 font-Ovo'>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-         Voluptate inventore cum quasi vitae iusto non voluptates, pariatur architecto sed quo. 
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, nam?
+       I appreciate you checking out my work. If you want to collaborate or just say hello, feel free to contact me anytime!
         </motion.p>
 
       <motion.form

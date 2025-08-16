@@ -32,13 +32,21 @@ const About = ({isDarkMode}) => {
        className='flex w-full flex-col lg:flex-row items-center gap-20 my-20'>
 
         <motion.div
-        initial={{opacity: 0, scale: 0.9}}
-       whileInView={{opacity: 1, scale: 1}}
-       transition={{duration: 0.6}}
-         className='w-64 sm:w-80 rounded-3x1 max-w-none'>
-            <Image src={assets.user_image} alt='user' 
-            className='w-full rounded-3x1'/>
-        </motion.div>
+  initial={{ opacity: 0, scale: 0.9 }}
+  whileInView={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 0.6 }}
+  className="   w-64 sm:w-80 max-w-none rounded-3xl overflow-hidden shadow-lg mx-auto
+    dark:shadow-[0_0_15px_3px_rgba(139,92,246,0.7)] 
+    hover:scale-105 hover:shadow-[0_0_20px_5px_rgba(139,92,246,0.9)]
+    transition duration-300 ease-in-out"
+>
+  <Image
+    src={assets.user_image}
+    alt="user"
+    className="w-full h-auto object-cover rounded-3xl"
+  />
+</motion.div>
+
         
         <motion.div
           initial={{opacity: 0}}
@@ -53,7 +61,7 @@ const About = ({isDarkMode}) => {
             I thrive in dynamic, collaborative environments that value creativity, continuous learning, and meaningful impact.
             </p>
 
-            <motion.ul
+            {/* <motion.ul
               initial={{opacity: 0}}
               whileInView={{opacity: 1}}
               transition={{duration: 0.8, delay: 1}}
@@ -70,7 +78,7 @@ const About = ({isDarkMode}) => {
                         <p className='text-gray-600 text-sm dark:text-white/80'>{description}</p>
                     </motion.li>
                 ))}
-            </motion.ul>
+            </motion.ul> */}
 
             <motion.h4
               initial={{y: 20, opacity: 0}}
