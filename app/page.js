@@ -24,13 +24,15 @@ useEffect(()=>{
 },[]);
 
 useEffect(()=>{
-    if(isDarkMode){
-      document.documentElement.classList.add('dark');
-      localStorage.theme = 'dark';
-    }else{
-      document.documentElement.classList.remove('dark');
-      localStorage.theme = '';
-    }
+ if(isDarkMode){
+  document.documentElement.classList.add('dark');
+  document.documentElement.classList.remove('light');
+  localStorage.theme = 'dark';
+}else{
+  document.documentElement.classList.remove('dark');
+  document.documentElement.classList.add('light'); // dodato
+  localStorage.theme = 'light'; // ili ''
+}
 },[isDarkMode])
 
   return (

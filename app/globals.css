@@ -5,3 +5,13 @@
 * {
   font-family: Outfit;
 }
+
+html.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+html.dark {
+  background-color: #11001F; /* darkTheme */
+  color: #ffffff;
+}
