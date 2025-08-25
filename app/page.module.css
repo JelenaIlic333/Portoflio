@@ -16,8 +16,8 @@
   font-family: var(--font-geist-sans);
 
    /* DODATO: light pozadina i tekst */
-  background-color: #ffffff; 
-  color: #000000;
+ background-color: #ffffff !important; 
+  color: #000000 !important;
 }
 
 @media (prefers-color-scheme: dark) {
