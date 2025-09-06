@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar";
 import Services from "./components/Services";
 import Work from "./components/Work";
 import SiteProject from "./components/SiteProject.jsx";
+import PortfolioGames from "./components/PortfolioGames";
 
 
 export default function Home() {
@@ -43,6 +44,7 @@ useEffect(()=>{
     <Services isDarkMode={isDarkMode} />
     <Work isDarkMode={isDarkMode} />
     <SiteProject isDarkMode={isDarkMode} />
+    <PortfolioGames isDarkMode={isDarkMode} />
     <Contact isDarkMode={isDarkMode} />
     <Footer isDarkMode={isDarkMode} />
     </>

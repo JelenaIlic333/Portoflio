@@ -215,3 +215,25 @@ export const toolsData = [
     assets.vscode, assets.figma, assets.git, assets.php, assets.html, assets.css, assets.java, assets.javascript,
     assets.react, assets.bootstrap, assets.mysql, assets.github, 
 ];
+
+export const portfolioGamesData = [
+    {
+      title: "Sudoku",
+      description: "Classic Sudoku game implemented in Java with Swing.",
+      bgImage: '/sudoku.png',
+      jarLink: "sudoku.jar"
+    },
+    {
+      title: "Black Jack",
+      description: "Simple Blackjack card game in Java.",
+      bgImage: '/BlackJack.png',
+      jarLink: "/blackjack.jar"
+    },
+    {
+      title: "Pac-Man",
+      description: "Move Pac-Man with arrow keys and avoid ghosts.",
+      bgImage: '/pacman.png',
+      jarLink: "pacman.jar"
+    },
+    
+  ];
