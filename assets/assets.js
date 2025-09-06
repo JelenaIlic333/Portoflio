@@ -219,19 +219,28 @@ export const toolsData = [
 export const portfolioGamesData = [
     {
       title: "Sudoku",
-      description: "Classic Sudoku game implemented in Java with Swing.",
+      description: "Classic Sudoku game implemented in Java with Swing.\n" +
+        "This is a digital version of the classic number puzzle game Sudoku.\n" +
+        "Players fill a 9x9 grid so that each row, column, and 3x3 box contains all digits from 1 to 9.\n" +
+        "It demonstrates Java skills, GUI handling with Swing, and logical problem-solving.",
       bgImage: '/sudoku.png',
       jarLink: "sudoku.jar"
     },
     {
       title: "Black Jack",
-      description: "Simple Blackjack card game in Java.",
+      description: "Classic Blackjack card game implemented in Java." +
+        "Players try to get as close as possible to 21 without going over, competing against the dealer." +
+        "Includes game logic for dealing cards, scoring, and player decisions (hit, stand, double)." +
+        "Demonstrates object-oriented design and implementation of game rules in Java.",
       bgImage: '/BlackJack.png',
       jarLink: "/blackjack.jar"
     },
     {
       title: "Pac-Man",
-      description: "Move Pac-Man with arrow keys and avoid ghosts.",
+      description: "Pac-Man game implemented in Java.\n" +
+        "Navigate Pac-Man through the maze, eating pellets while avoiding ghosts.\n" +
+        "Features a responsive GUI and game mechanics like lives, score tracking, and level progression." +
+        "This project shows your ability to handle interactive graphics and event-driven programming in Java.",
       bgImage: '/pacman.png',
       jarLink: "pacman.jar"
     },
