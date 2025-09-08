@@ -12,7 +12,7 @@ const PortfolioGames = ({ isDarkMode }) => {
         transition={{ delay: 0.3, duration: 0.5 }}
         className="text-4xl font-Ovo text-center mb-10 dark:text-white"
       >
-        Java Games Portfolio
+        Java Games 
       </motion.h4>
 
       <motion.div
